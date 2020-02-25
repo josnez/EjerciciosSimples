@@ -1,6 +1,18 @@
-#21. Escribir un programa que dado un número del 1 a 7 escriba el correspondiente nombre del
-#día de la semana.
-
 def dia():
-    d = input("Digite un numero del 1 al 7")
-    switch d
+    d = int(input("Digite un numero del 1 al 7\n"))
+    if d==1:
+    	return "Lunes"
+    elif d==2:
+    	return "Martes"
+    elif d==3:
+    	return "Miercoles"
+    elif d==4:
+    	return "Jueves"
+    elif d==5:
+    	return "Viernes"
+    elif d==6:
+    	return "Sabado"
+    elif d==7:
+    	return "Domingo"
+
+print(dia())
