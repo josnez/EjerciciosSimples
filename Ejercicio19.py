@@ -1,3 +1,4 @@
+import time
 def main():
     h = int(input("Digite las horas: \n"))
     m = int(input("Digite los minutos: \n"))
@@ -9,6 +10,7 @@ def main():
     while(auxH!=h or auxM!=m or auxS!=s):
         if auxS<61:
             auxS+=1
+            time.sleep(1)
             imprimir(auxH, auxM, auxS)
         else:
             auxS=0
